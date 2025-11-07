@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center px-10 py-4 bg-white shadow-md border-t-4 ">
+        <div class="flex items-center gap-2">
+            <img src="https://img.icons8.com/ios-filled/50/000000/car.png" class="w-6" alt="car icon">
+            <span class="font-semibold text-lg">Car Rental</span>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-6 text-black font-medium">
+            <li><a href="index.html" class="hover:text-orange-400">Home</a></li>
+            <li><a href="vehicle.html" class="hover:text-orange-400">Vehicles</a></li>
+            <li><a href="#" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="Contact Us.html" class="hover:text-orange-400">Contact Us</a></li>
+        </ul>
+
+        <!-- Search + Icons -->
+        <div class="flex items-center space-x-4">
+      <!-- Cart Icon -->
+
+            <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-5 h-5 text-green-500">
+            </svg>
+            <i class="fa-solid fa-phone"></i>
+            <span class="text-sm">Need help?<br><b>+996 247-1860</b></span>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-600 hover:text-blue-600">
+            ☰
+        </button>
+    </nav>
+    <div class="max-w-7xl mx-auto text-center py-12 px-6">
+        <h1 class="text-3xl font-bold mb-2">About Us</h1>
+        <p class="text-sm text-gray-500">Home / <span class="text-black font-medium">About Us</span></p>
+    </div>
+
+    <!-- Separator line (Optional, but helps structure the layout) -->
+    <div class="border-t border-gray-200"></div>
+
+    <!-- 3. Feature/Value Proposition Section -->
+    <div class="max-w-7xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12">
+
+            <!-- Left Side: Main Value Proposition -->
+            <div class="md:col-span-2 lg:col-span-1  border-gray-400 pr-10">
+                <h2 class="text-3xl lg:text-3xl font-bold leading-tight tracking-tight">
+                    Where every <span class="block">drive feels</span> extraordinary
+                </h2>
+            </div>
+
+            <!-- Right Side: Features List -->
+            <div class="md:col-span-2 lg:col-span-3 grid sm:grid-cols-2 gap-8 dashed-border-y py-6">
+
+                <!-- Feature 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Variety Brands</h3>
+                    <p class="text-sm text-gray-600">
+                        Plates non auctor fermentum sollicitudin. Eget adipiscing augue sit quam natoque ornare cursus
+                        viverra odio. Etiam quam gravida ultricies velit.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Awesome Support</h3>
+                    <p class="text-sm text-gray-600">
+                        Eget adipiscing augue sit quam natoque ornare cursus viverra odio. Etiam quam gravida ultricies
+                        velit.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Maximum Freedom</h3>
+                    <p class="text-sm text-gray-600">
+                        Diam quam gravida ultricies velit duis consequat integer. Est aliquam posuere vel rhoncus massa
+                        volutpat in
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Flexibility On The Go</h3>
+                    <p class="text-sm text-gray-600">
+                        Vitae pretium nulla sed quam id nisi semper. Vel non in proin egestas dis faucibus rhoncus,
+                        iaculis dignissim aenean pellentesque nisl
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 4. Video/Image Preview Section -->
+    <div class="max-w-6xl mx-auto px-6 pb-6">
+        <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl h-96">
+            <!-- Background Image with Blur Effect (for the visual style) -->
+            <div class="absolute inset-0 bg-cover bg-center">
+               
+                <div class="flex justify-center items-center min-h-screen bg-gray-100">
+  <iframe
+    class="rounded-lg shadow-lg w-full h-auto w-6xl aspect-video blur "
+    src="https://www.youtube.com/embed/OdOu8yGpIig?si=ouEauH93yl8zlVC3"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+            </div>
+                  </div>
+    </div>
+
+    <!-- 5. Statistics/Count Section -->
+    <div
+        class="max-w-5xl mx-auto px-6 py-12 text-center flex flex-col sm:flex-row justify-around items-start sm:items-center space-y-10 sm:space-y-0 sm:space-x-8">
+
+        <!-- Stat 1 -->
+        <div class="flex-1">
+            <h3 class="text-3xl font-extrabold text-black mb-2">20k+</h3>
+            <p class="text-base text-black font-medium">Happy customers</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="flex-1">
+            <h3 class="text-3xl font-extrabold text-black mb-2">540+</h3>
+            <p class="text-base text-black font-medium">Count of cars</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="flex-1">
+            <h3 class="text-3xl font-extrabold text-iblack mb-2">25+</h3>
+            <p class="text-base text-black font-medium">Years of experience</p>
+        </div>
+
+    </div>
+    <div class="bg-white text-black">
+
+        <!-- Section 1: App Download Banner -->
+        <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+            <div
+                class="max-w-7xl mx-auto rounded-3xl shadow-xl overflow-hidden bg-black text-white relative p-8 md:p-0">
+
+                <!-- Background Overlay for Tire Tracks -->
+                <div class="absolute inset-0 tire-pattern"></div>
+
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between">
+
+                    <!-- Left Side: Phone Mockup -->
+                    <div class="md:w-1/3 flex justify-center p-8 md:py-16 md:px-12 order-2 md:order-1">
+                        <!-- Simple Phone Mockup SVG -->
+                        <svg class="w-48 h-auto" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="0" width="200" height="400" rx="20" fill="white" stroke="#333"
+                                stroke-width="8" />
+                            <rect x="10" y="10" width="180" height="380" rx="15" fill="#f8fafc" />
+                            <rect x="80" y="375" width="40" height="5" rx="2.5" fill="#333" />
+                            <circle cx="100" cy="25" r="3" fill="#333" />
+                        </svg>
+                    </div>
+
+                    <!-- Right Side: Text and App Store Buttons -->
+                    <div
+                        class="md:w-2/3 p-4 md:p-16 space-y-4 md:space-y-6 text-center md:text-left order-1 md:order-2">
+                        <p class="text-sm font-semibold text-gray-300 uppercase tracking-widest">Download Our App</p>
+                        <h2 class="text-4xl sm:text-3xl font-Arial leading-tight">
+                            Download our app
+                        </h2>
+                        <p class="text-base text-gray-200 max-w-lg mx-auto md:mx-0">
+                            Turpis morbi enim nisi pulvinar leo dui tellus. Faucibus egestas semper diam rutrum dictumst
+                            ut donec. Nisl nisi morbi vel in vulputate. Nulla nam eget urna fusce vulputate ut risus
+                        </p>
+
+                        <!-- App Store Buttons -->
+                        <div
+                            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start pt-4">
+                            <!-- Apple App Store Button -->
+                            <a href="#">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                    alt="Google Play" class="h-10">
+                            </a>
+                            <a href="#">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="App Store" class="h-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Customer Reviews -->
+        <section class="max-w-7xl mx-auto py-1 md:py-2 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">
+                Reviews from our customers
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Review Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <!-- Quote Icon -->
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text-base text-gray-700 italic mb-6">
+                            Et aliquet netus at sapien pellentesque mollis nec dignissim maecenas. Amet erat volutpat
+                            quisque odio purus feugiat. In gravida neque
+                        </p>
+                    </div>
+                    <!-- Customer Info -->
+                    <div class="text-center">
+                        <!-- Avatar and Background bar -->
+
+                        <div class="mt-10">
+                            <p class="text-xs py-20 px-20 text-black">Kuphal LLC</p>
+                            <p class="text-sm font-semibold text-white">Emanuel Boyle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <!-- Quote Icon -->
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text-base text-black italic mb-6">
+                            Purus consectetur varius quis urna phasellus enim mattis. Sem tincidunt tortor nunc egestas
+                            amet adipiscing ligula
+                        </p>
+                    </div>
+                    <!-- Customer Info -->
+                    <div class="text-center">
+                        <!-- Avatar and Background bar -->
+                        <div
+                            class="relative h-16 rounded-b-xl bg-custom-purple mt-4 -mx-6 -mb-6 flex justify-center items-start pt-6">
+
+                        </div>
+                        <div class="mt-10">
+                            <p class="text-xs text-black py-20 px-20">Glover - Om</p>
+                            <p class="text-sm font-semibold text-white">River Graves</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <!-- Quote Icon -->
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text-base text-gray-700 italic mb-6">
+                            Quam neque odio urna euismod felis. Sit egestas magna in quisque fames dapibus quis sapien
+                            magna. Nisl non eget sit pellentesque tristique et
+                        </p>
+                    </div>
+                    <!-- Customer Info -->
+                    <div class="text-center">
+                        <!-- Avatar and Background bar -->
+                        <div
+                            class="relative h-16 rounded-b-xl bg-custom-purple mt-4 -mx-6 -mb-6 flex justify-center items-start pt-6">
+
+                        </div>
+                        <div class="mt-10">
+                            <p class="text-xs text-black py-20 px-20">Haag LLC</p>
+                            <p class="text-sm font-semibold text-white">Ryder Malone</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
+    <div class="flex items-center justify-center p-4">
+
+        <!-- Main Card Container -->
+        <div class="max-w-6xl w-full rounded-2xl shadow-xl overflow-hidden bg-black text-white relative">
+
+            <!-- 1. Background Layers -->
+
+            <!-- Tire Track Pattern Overlay (low opacity) -->
+            <div class="absolute inset-0 tire-pattern opacity-10"></div>
+
+            <!-- Blurred Car Image (positioned on the right) -->
+            <!-- We use an image with a filter for the abstract, blurred look -->
+            <div class="absolute inset-0 pointer-events-none">
+                <div class="absolute inset-0 md:inset-y-0 md:right-0 w-full md:w-1/2 bg-cover bg-center">
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- 2. Content Layer -->
+            <div class="relative z-10 p-8 md:p-12 lg:p-5 flex flex-col md:flex-row items-center">
+
+                <!-- Left Side: Text and Button -->
+                <section
+                    class="relative bg-gradient-to-r from-black to-black flex flex-row-reverse items-center b p-8  rounded-3xl w-[90%] ml-20">
+
+                    <div class="w-1/2 image-content">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2krlROWUmgXAeHCrmMTVkHNekxFw0dXRT%25NHC9%25vGx6672yzH3OYgMTNIk1mlDYNdmGy2oL4gpn23HGfvQFz9oNE47EvkeQajnWj0Lk9DyeONayV%25OkaotUZ7WcMtECUkUdL7slGAGzGCrXpFpkilZQ6K6ANXRaYWYFcQ5nmPmK5agOyby1onvIT9PS4O2B3ibMxIjedwsbNBDMztraoeqhk7ZqzMLoACRBghJHFl54pou%25KXhujHSfWQoSB%25V1PaHTSfNEbn%252M10s9Of8pE4riI1LJscZwBEX5rxRtesvFZ857MrubRUgChZ215GvloIfjgp2XHByXv6jQ%25e5c2YDafuo8jmqn1Sd5DyLOEVSBqTJIsN8WL3uBrK16JdSeZWdBuzVMRPmmSkNh5bXVVA0og9RaNF4HvWAL0Kc%252PF84WsKokGpc1Q8CBsJdoR7Gqap89RpC0vQFju1dWS2aOIXRTmcG6Ys%25rt3q7gCoub6TI8nTNGXU7tE6RVuMFSId4ozd"
+                            alt="Red Sports Car" class="max-w-full h-auto blur">
+                    </div>
+
+                    <div class="w-1/2 text-content text-white pr-8">
+                        <h1 class="text-4xl font-bold mb-4">Looking for a car?</h1>
+                        <p class="text-lg mb-6">+537 547-6401</p>
+                        <p>Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in...
+                        </p>
+                        <button class="bg-orange-400 text-black font-semibold py-2 px-6 rounded hover:bg-yellow-300">
+                            Book now
+                        </button>
+                    </div>
+
+            </div>
+
+            </section>
+            <!-- Right Side: Filler space to push content left (important for responsiveness) -->
+            <div class="md:w-2/5 h-6 md:h-0"></div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="border-t border-gray-200 pt-10 pb-6 px-6 md:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+
+            <!-- Logo & Description -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-car text-xl"></i>
+                    <span class="font-semibold text-sm">Car Rental</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                    Faucibus faucibus pellentesque dictum turpis.
+                    Id pellentesque turpis massa a id iaculis lorem tincidunt.
+                </p>
+                <div class="flex gap-4 text-gray-700">
+                    <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                    <a href="#"><i class="fab fa-instagram hover:text-pink-600"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in hover:text-blue-500"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p class="text-sm font-medium">Address</p>
+                </div>
+                <p class="text-sm text-gray-600">Oxford Ave. Cary, NC 27511</p>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="text-sm font-medium">Email</p>
+                </div>
+                <p class="text-sm text-gray-600">nwigier@yahoo.com</p>
+            </div>
+
+            <!-- Phone -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="text-sm font-medium">Phone</p>
+                </div>
+                <p class="text-sm text-gray-600">+537 547-6401</p>
+            </div>
+
+            <!-- Download App -->
+            <div>
+                <h4 class="text-sm font-semibold mb-3">Download App</h4>
+                <div class="flex flex-col gap-3">
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play" class="h-10">
+                    </a>
+                    <a href="#">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store" class="h-10">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-200 mt-10 pt-4 text-center text-xs text-gray-500">
+            © Copyright Car Rental 2024. Design by Figma.guru
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

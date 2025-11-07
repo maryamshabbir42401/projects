@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center px-10 py-4 bg-white shadow-md border-t-4 ">
+        <div class="flex items-center gap-2">
+            <img src="https://img.icons8.com/ios-filled/50/000000/car.png" class="w-6" alt="car icon">
+            <span class="font-semibold text-lg">Car Rental</span>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-6 text-black font-medium">
+            <li><a href="#" class="hover:text-orange-400">Home</a></li>
+            <li><a href="vehicle.html" class="hover:text-orange-400">Vehicles</a></li>
+            <li><a href="About Us.html" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="Contact Us.html" class="hover:text-orange-400">Contact Us</a></li>
+        </ul>
+
+        <!-- Search + Icons -->
+        <div class="flex items-center space-x-4">
+
+
+            <!-- Cart Icon -->
+
+            <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-5 h-5 text-green-500">
+
+
+            </svg>
+            <i class="fa-solid fa-phone"></i>
+            <span class="text-sm">Need help?<br><b>+996 247-1860</b></span>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-600 hover:text-blue-600">
+            ☰
+        </button>
+    </nav>
+
+    <section
+        class="relative bg-gradient-to-r from-black to-black flex flex-row-reverse items-center b p-8  rounded-3xl w-[90%] ml-20">
+
+        <div class="w-1/2 image-content">
+            <img src="car.jpg" alt="Red Sports Car" class="max-w-full h-auto">
+        </div>
+
+        <div class="w-1/2 text-content text-white pr-8">
+            <h1 class="text-4xl font-bold mb-4">Experience the road like never before</h1>
+            <p class="text-lg mb-6">Rent a car today on your next adventure and enjoy</p>
+            <button class="bg-orange-400 text-black font-semibold py-3 px-6 rounded hover:bg-yellow-300">
+                View all cars
+            </button>
+        </div>
+
+        </div>
+
+    </section>
+    <section class="grid grid-cols-3 gap-6 text-center px-10 py-12">
+        <div class="">
+            <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" class="mx-auto mb-3">
+            <h3 class="font-semibold text-lg mb-2">Availability</h3>
+            <p class="text-gray-600 text-sm">Duis tincidunt erat at semper fermentum. Ad ultricies quis.</p>
+        </div>
+        <div class="">
+            <img src="https://img.icons8.com/ios-filled/50/000000/car.png" class="mx-auto mb-3">
+
+            <h3 class="font-semibold text-lg mb-2">Comfort</h3>
+            <p class="text-gray-600 text-sm">Gravida auctor fermentum morbi ac egestas orci.</p>
+        </div>
+        <div class="">
+            <img src="https://img.icons8.com/ios-filled/50/000000/wallet.png" class="mx-auto mb-3">
+            <h3 class="font-semibold text-lg mb-2">Savings</h3>
+            <p class="text-gray-600 text-sm">Premium convallis id diam sed commodo vestibulum tortor.</p>
+        </div>
+    </section>
+    <div class="bg-gray-50 flex items-center justify-center min-h-screen p-4 sm:p-8">
+
+        <!-- Card Container -->
+        <div class="max-w-6xl w-full bg-white shadow-xl rounded-xl overflow-hidden border border-gray-200">
+
+            <!-- The main layout container (Flex for desktop, stacked on mobile) -->
+            <div class="md:flex">
+
+                <!-- Left Column: Image Card -->
+                <div class="md:w-5/12 p-4 md:p-8">
+                    <!-- Image Container with Rounded Corners and Mock Image Background (Blurs match the uploaded image) -->
+
+                </div>
+
+                <!-- Right Column: Numbered Features List -->
+                <div class="md:w-7/12 p-6 sm:p-8 md:p-12 space-y-8">
+
+                    <!-- Feature 1 -->
+                    <div class="flex items-start space-x-4">
+                        <!-- Circle Number Icon (Indigo color with a shadow) -->
+                        <div
+                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-orange-400 text-white font-bold text-sm shadow-md">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-extrabold text-gray-900">Erat at semper</h3>
+                            <p class="mt-1 text-base text-gray-600">
+                                Non amet fermentum est in enim at sit ullamcorper. Sit elementum rhoncus nullam feugiat.
+                                Risus sem fermentum...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start space-x-4">
+                        <!-- Circle Number Icon -->
+                        <div
+                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-orange-400 text-white font-bold text-sm shadow-md">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-extrabold text-gray-900">Urna nec vivamus risus duis arcu</h3>
+                            <p class="mt-1 text-base text-gray-600">
+                                Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et
+                                gravida. Quis nunc interdum gravida ullamcorper
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start space-x-4">
+                        <!-- Circle Number Icon -->
+                        <div
+                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-orange-400 text-white font-bold text-sm shadow-md">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-extrabold text-gray-900">Lobortis euismod imperdiet tempus</h3>
+                            <p class="mt-1 text-base text-gray-600">
+                                Viverra scelerisque mauris et nullam molestie et. Augue adipiscing praesent nisl cras
+                                nunc luctus viverra nisi
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="flex items-start space-x-4">
+                        <!-- Circle Number Icon -->
+                        <div
+                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-orange-400 text-white font-bold text-sm shadow-md">
+                            4
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-extrabold text-gray-900">Cras nulla aliquet nam eleifend amet et
+                            </h3>
+                            <p class="mt-1 text-base text-gray-600">
+                                Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et
+                                gravida. Quis nunc interdum gravida ullamcorper sed integer. Quisque eleifend tincidunt
+                                vulputate libero
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="bg-gray-50 font-sans text-gray-800">
+
+        <!-- Section Title -->
+        <section class="px-10 py-10">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">Choose the car that suits you</h2>
+                <a href="#" class="text-black font-semibold hover:underline">View All</a>
+            </div>
+
+            <!-- Car Cards Container -->
+            <div id="carContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </section>
+    </div>
+    <!-- Facts in Numbers -->
+    <section class="bg-black text-white text-center py-16 px-6 relative overflow-hidden rounded-3xl w-[90%] ml-20">
+        <h2 class="text-3xl font-bold mb-3">Facts In Numbers</h2>
+        <p class="text-black max-w-xl mx-auto mb-10">
+            Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in.
+        </p>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto ">
+            <div class="bg-white text-gray-800 rounded-2xl py-6 shadow-md">
+                <div class="flex flex-col items-center">
+                    <div class="bg-orange-100 p-3 rounded-xl mb-2">
+                        <span class="material-symbols-outlined text-orange-500 text-1xl">directions_car</span>
+                    </div>
+                    <p class="text-2xl font-bold text-black">540+</p>
+                    <p>Cars</p>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-800 rounded-2xl py-6 shadow-md ">
+                <div class="flex flex-col items-center">
+                    <div class="bg-orange-100 p-3 rounded-xl mb-2">
+                        <span class="material-symbols-outlined text-orange-500 text-1xl">person</span>
+                    </div>
+                    <p class="text-2xl font-bold text-black">20k+</p>
+                    <p>Customers</p>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-800 rounded-2xl py-6 shadow-md">
+                <div class="flex flex-col items-center">
+                    <div class="bg-orange-100 p-3 rounded-xl mb-2">
+                        <span class="material-symbols-outlined text-orange-500 text-1xl">calendar_month</span>
+                    </div>
+                    <p class="text-2xl font-bold text-black">25+</p>
+                    <p>Years</p>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-800 rounded-2xl py-6 shadow-md">
+                <div class="flex flex-col items-center">
+                    <div class="bg-orange-100 p-3 rounded-xl mb-2">
+                        <span class="material-symbols-outlined text-orange-500 text-1xl">speed</span>
+                    </div>
+                    <p class="text-2xl font-bold text-black">20m+</p>
+                    <p>Miles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Mobile App -->
+    <section class="flex flex-col md:flex-row items-center justify-between px-10 py-16 max-w-6xl mx-auto">
+        <div class="md:w-1/2">
+            <h3 class="text-3xl font-bold mb-4">Download mobile app</h3>
+            <p class="text-gray-600 mb-6">
+                Imperdiet ut tristique viverra nam. Ultrices quam et turpis turpis nibh placerat massa.
+                Praesent ut nisl sit in turpis aliquet cras hendrerit etiam condimentum.
+            </p>
+            <div class="flex gap-4 material-symbols-outlined-black">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+                    alt="App Store" class="h-10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREsmbC8M-e4BCx-lE9TV6DMrKhjKHle-omyg&s"
+                    alt="Google Play" class="h-10">
+            </div>
+        </div>
+
+        <div class="relative w-96 h-96mt-10 md:mt-0 md:w-1/2 flex justify-center ">
+            <div class="flex gap-5">
+                <div class="w-32 h-64 border-4  border-black rounded-3xl"></div>
+                <div class="w-32 h-64 border-4  border-black rounded-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <!-image Section -->
+    <section class="bg-black text-white text-center py-14 px-6 rounded-3xl w-[90%] ml-20">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Enjoy every mile with adorable companionship.</h2>
+        <p class="text-black mb-6 max-w-xl mx-auto">
+            Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in.
+        </p>
+
+        <div class="flex justify-center">
+            <input type="text" placeholder="City"
+                class="px-4 py-3 rounded-l-full bg-white text-black w-60 focus:outline-none">
+            <button class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-r-full font-semibold">Search</button>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-200 pt-10 pb-6 px-6 md:px-20 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+
+            <!-- Logo & Description -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-car text-xl"></i>
+                    <span class="font-semibold text-sm">Car Rental</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                    Faucibus faucibus pellentesque dictum turpis.
+                    Id pellentesque turpis massa a id iaculis lorem tincidunt.
+                </p>
+                <div class="flex gap-4 text-gray-700">
+                    <a href="#"><i class="fab fa-facebook-f hover:text-black"></i></a>
+                    <a href="#"><i class="fab fa-instagram hover:text-black"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in hover:text-black"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p class="text-sm font-medium">Address</p>
+                </div>
+                <p class="text-sm text-gray-600">Oxford Ave. Cary, NC 27511</p>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="text-sm font-medium">Email</p>
+                </div>
+                <p class="text-sm text-gray-600">nwigier@yahoo.com</p>
+            </div>
+
+            <!-- Phone -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="text-sm font-medium">Phone</p>
+                </div>
+                <p class="text-sm text-gray-600">+537 547-6401</p>
+            </div>
+
+            <!-- Download App -->
+            <div>
+                <h4 class="text-sm font-semibold mb-3">Download App</h4>
+                <div class="flex flex-col gap-3">
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play" class="h-10">
+                    </a>
+                    <a href="#">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store" class="h-10">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-200 mt-10 pt-4 text-center text-xs text-gray-500">
+            © Copyright Car Rental 2024. Design by Figma.guru
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

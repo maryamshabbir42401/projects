@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center px-10 py-4 bg-white shadow-md border-t-4 ">
+        <div class="flex items-center gap-2">
+            <img src="https://img.icons8.com/ios-filled/50/000000/car.png" class="w-6" alt="car icon">
+            <span class="font-semibold text-lg">Car Rental</span>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-6 text-black font-medium">
+            <li><a href="index.html" class="hover:text-orange-400">Home</a></li>
+            <li><a href="vehicle.html" class="hover:text-orange-400">Vehicles</a></li>
+            <li><a href="About Us.html" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="#" class="hover:text-orange-400">Contact Us</a></li>
+        </ul>
+
+        <!-- Search + Icons -->
+        <div class="flex items-center space-x-4">
+
+
+            <!-- Cart Icon -->
+
+            <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-5 h-5 text-green-500">
+
+
+            </svg>
+            <i class="fa-solid fa-phone"></i>
+            <span class="text-sm">Need help?<br><b>+996 247-1860</b></span>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-600 hover:text-blue-600">
+            ☰
+        </button>
+    </nav>
+
+    <div class="max-w-7xl mx-auto text-center py-12 px-6">
+        <h1 class="text-3xl font-bold mb-2">Contact Us</h1>
+        <p class="text-sm text-gray-500">Home / <span class="text-black font-medium">Contact Us</span></p>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Main Section -->
+    <div class="flex flex-col md:flex-row items-start justify-center gap-6 p-6">
+
+        <!-- Booking Card -->
+        <div class="bg-black text-white rounded-xl p-6 w-full max-w-sm shadow-lg">
+            <h2 class="text-lg font-semibold mb-4 text-center">Book your car</h2>
+
+            <form class="space-y-3">
+                <select class="w-full p-3 rounded-lg text-white">
+                    <option>Car type</option>
+                    <option>Sedan</option>
+                    <option>SUV</option>
+                    <option>Convertible</option>
+                </select>
+
+                <select class="w-full p-3 rounded-lg text-white">
+                    <option>Place of rental</option>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>Chicago</option>
+                </select>
+
+                <select class="w-full p-3 rounded-lg text-white">
+                    <option>Place of return</option>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>Chicago</option>
+                </select>
+
+                <input type="date" class="w-full p-3 rounded-lg text-gray-700" placeholder="Rental date" />
+                <input type="date" class="w-full p-3 rounded-lg text-gray-700" placeholder="Return date" />
+
+                <button
+                    class="w-full bg-orange-400 text-black font-semibold rounded-lg py-3 hover:bg-yellow-400 transition">
+                    Book now
+                </button>
+            </form>
+        </div>
+
+        <!-- Blurred Image -->
+        <div class="flex rounded-xl overflow-hidden blur py-0 md:py-0">
+            <img src="https://cometinsure.com/blog/wp-content/uploads/2024/08/Best-Fuel-Average-Cars-in-Pakistan.jpg"
+                alt="Car Rental" class="w-full h-full object-cover " />
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-x-20 py-8 bg-white shadow-inner">
+        <div class="flex items-center gap-3">
+            <div class="bg-orange-400 p-3 rounded-full text-white">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+                <p class="font-semibold">Address</p>
+                <p class="text-gray-600">Oxford Ave. Cary, NC 27511</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <div class="bg-orange-400 p-3 rounded-full text-white">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+                <p class="font-semibold">Email</p>
+                <p class="text-gray-600">nwigier@yahoo.com</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <div class="bg-orange-400 p-3 rounded-full text-white">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+                <p class="font-semibold">Phone</p>
+                <p class="text-gray-600">+537 547-6401</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <div class="bg-orange-400 p-3 rounded-full text-white">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div>
+                <p class="font-semibold">Opening hours</p>
+                <p class="text-gray-600">Sun–Mon: 10am – 10pm</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="py-12 text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-10">Latest blog posts & news</h2>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 px-6">
+
+            <!-- Blog Card 1 -->
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition w-full md:w-80 text-left overflow-hidden">
+                <div class="h-44 overflow-hidden blur">
+                    <img src="https://wallpaperaccess.com/full/20008.jpg" alt="Blog 1"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-1">How To Choose The Right Car</h3>
+                    <p class="text-sm text-gray-500">News / 12 April 2024</p>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition w-full md:w-80 text-left overflow-hidden">
+                <div class="h-44 overflow-hidden blur">
+                    <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2023/04/2006_toyota_4runner_ltd_04.jpg"
+                        alt="Blog 2" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-1">Which plan is right for me?</h3>
+                    <p class="text-sm text-gray-500">News / 12 April 2024</p>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="bg-white rounded-xl shadow hover:shadow-lg transition w-full md:w-80 text-left overflow-hidden">
+                <div class="h-44 overflow-hidden blur">
+                    <img src="https://media.wired.com/photos/592675f6cefba457b079a0cd/3:2/w_2560%2Cc_limit/SCG003S-FRONTTA.jpg"
+                        alt="Blog 3" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-900 mb-1">Enjoy Speed, Choice & Total Control</h3>
+                    <p class="text-sm text-gray-500">News / 12 April 2024</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Car Brand Logos -->
+    <!-- Logo Strip Container -->
+    <!-- Classes: bg-white for background, rounded-2xl for large rounded corners, 
+         shadow-lg for depth, and flex/items-center/justify-around for layout. -->
+    <div
+        class="max-w-7xl w-full bg-white rounded-2xl shadow-sm p-8 sm:p-10 flex flex-wrap items-center justify-around gap-y-6 ml-10 mb-10 mt-10">
+
+        <!-- Logo Item 1 (Toyota - with special overlay) -->
+        <div class="relative flex justify-center items-center w-1/3 sm:w-1/6 ">
+            <!-- SVG Logo - Set to a specific size and gray color for the desired look -->
+            <!-- The SVG content below is a simplified placeholder for the Toyota logo -->
+
+            <!-- 'myself' Button Overlay -->
+            <!-- Positioning is crucial here: absolute, right-0, bottom-0 to place it over the logo. -->
+
+            <img src="toyoto.png" class="h-10 w-20">
+        </div>
+
+        <!-- Logo Item 2 (Ford - using text to mimic the script font) -->
+        <div class="flex justify-center items-center w-1/3 sm:w-1/6">
+            <p class="font-serif italic font-extrabold text-3xl sm:text-4xl text-gray-900">Ford</p>
+        </div>
+
+        <!-- Logo Item 3 (Mercedes-Benz) -->
+        <div class="flex justify-center items-center w-1/3 sm:w-1/6">
+            <svg class="h-10 sm:h-12 text-gray-900 fill-current hover:text-orange-400 transition duration-300 cursor-pointer"
+                viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M12 2v10m0 0l-5 5m5-5l5 5" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+        </div>
+
+        <!-- Logo Item 4 (Jeep - using bold font) -->
+        <div class="flex justify-center items-center w-1/3 sm:w-1/6">
+            <p class="font-sans font-black text-3xl sm:text-4xl text-gray-900">Jeep</p>
+        </div>
+
+        <!-- Logo Item 5 (BMW) -->
+        <div class="flex justify-center items-center w-1/3 sm:w-1/6">
+            <svg class="h-10 sm:h-12 text-gray-900 fill-current hover:text-orange-400 transition duration-300 cursor-pointer"
+                viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                <path d="M12 2v10c0 5.523-4.477 10-10 10m10-10l5 5" stroke="currentColor" stroke-width="1.5"
+                    fill="none" />
+                <circle cx="12" cy="12" r="3" fill="currentColor" />
+            </svg>
+        </div>
+
+        <!-- Logo Item 6 (Audi) -->
+        <div class="flex justify-center items-center w-1/3 sm:w-1/6">
+            <!-- Four overlapping circles -->
+            <svg class="h-10 sm:h-12 text-gray-900 stroke-current hover:text-orange-400 transition duration-300 cursor-pointer"
+                viewBox="0 0 32 16" fill="none" stroke-width="1.5">
+                <circle cx="6" cy="8" r="7" />
+                <circle cx="14" cy="8" r="7" />
+                <circle cx="22" cy="8" r="7" />
+                <circle cx="30" cy="8" r="7" />
+            </svg>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="border-t border-gray-200 pt-10 pb-6 px-6 md:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+
+            <!-- Logo & Description -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-car text-xl"></i>
+                    <span class="font-semibold text-sm">Car Rental</span>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                    Faucibus faucibus pellentesque dictum turpis.
+                    Id pellentesque turpis massa a id iaculis lorem tincidunt.
+                </p>
+                <div class="flex gap-4 text-gray-700">
+                    <a href="#"><i class="fab fa-facebook-f hover:text-blue-600"></i></a>
+                    <a href="#"><i class="fab fa-instagram hover:text-pink-600"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in hover:text-blue-500"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p class="text-sm font-medium">Address</p>
+                </div>
+                <p class="text-sm text-gray-600">Oxford Ave. Cary, NC 27511</p>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="text-sm font-medium">Email</p>
+                </div>
+                <p class="text-sm text-gray-600">nwigier@yahoo.com</p>
+            </div>
+
+            <!-- Phone -->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="bg-orange-400 text-white p-2 rounded-full">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="text-sm font-medium">Phone</p>
+                </div>
+                <p class="text-sm text-gray-600">+537 547-6401</p>
+            </div>
+
+            <!-- Download App -->
+            <div>
+                <h4 class="text-sm font-semibold mb-3">Download App</h4>
+                <div class="flex flex-col gap-3">
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play" class="h-10">
+                    </a>
+                    <a href="#">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store" class="h-10">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-200 mt-10 pt-4 text-center text-xs text-gray-500">
+            © Copyright Car Rental 2024. Design by Figma.guru
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
